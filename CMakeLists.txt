@@ -10,7 +10,7 @@ if(catkin_FOUND)
   # ##########################################################################
   # ROS1 (catkin)
   # ##########################################################################
-  find_package(catkin REQUIRED COMPONENTS message_generation std_msgs ros1_rclcpp_compat)
+  find_package(catkin REQUIRED COMPONENTS message_generation std_msgs sq_ros1_rclcpp_compat)
 
   add_message_files(FILES ${MSG_FILES})
   add_service_files(FILES ${SRV_FILES})

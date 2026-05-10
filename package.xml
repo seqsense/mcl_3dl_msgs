@@ -13,7 +13,7 @@
   <!-- ROS1 (catkin) -->
   <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
   <build_depend condition="$ROS_VERSION == 1">message_generation</build_depend>
-  <build_depend condition="$ROS_VERSION == 1">ros1_rclcpp_compat</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">sq_ros1_rclcpp_compat</build_depend>
   <build_export_depend condition="$ROS_VERSION == 1">message_runtime</build_export_depend>
   <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
 
