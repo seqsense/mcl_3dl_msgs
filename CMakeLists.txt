@@ -39,6 +39,16 @@ else()
     DEPENDENCIES std_msgs
   )
 
+  if(BUILD_TESTING)
+    find_package(ament_lint_auto REQUIRED)
+    # CPP_FORMATTER=clang_format: use clang-format instead of uncrustify
+    list(APPEND AMENT_LINT_AUTO_EXCLUDE ament_cmake_uncrustify)
+    # The upstream LICENSE text is not recognized by ament_copyright and the
+    # package has no CONTRIBUTING.md; the license text is kept as-is.
+    list(APPEND AMENT_LINT_AUTO_EXCLUDE ament_cmake_copyright)
+    ament_lint_auto_find_test_dependencies()
+  endif()
+
   ament_auto_package()
 
 endif()
