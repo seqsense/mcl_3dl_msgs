@@ -15,6 +15,9 @@ jobs:
   test:
     uses: alpine-ros/alpine-ros-ci-workflows/.github/workflows/ros1.yaml@main
     with:
+      # The reusable workflow still defaults to Alpine 3.20, which is on its
+      # way out; pin to 3.23 to match the ROS 2 job.
+      alpine-version: "3.23"
       enable-bot-comment: true
       # This fork has neither access to the upstream bot-comment proxy nor a
       # CODECOV_TOKEN, so comment through the plain GitHub API and skip the
