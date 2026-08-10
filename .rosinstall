@@ -1,0 +1,4 @@
+- git:
+    local-name: sq_ros1_rclcpp_compat
+    uri: https://github.com/seqsense/sq_ros1_rclcpp_compat.git
+    version: main
