@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.5...3.26)
 project(mcl_3dl_msgs)
 
 set(MSG_FILES Status.msg)
